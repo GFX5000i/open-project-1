@@ -48,7 +48,7 @@ public class SpawnSystem : MonoBehaviour
 
 		//Look for the element in the available LocationEntries that matches tha last PathSO taken
 		int entranceIndex = Array.FindIndex(_spawnLocations, element =>
-			element.EntrancePath == _pathTaken.lastPathTaken );
+			element.EntrancePath == _pathTaken.lastPathTaken);
 
 		if (entranceIndex == -1)
 		{

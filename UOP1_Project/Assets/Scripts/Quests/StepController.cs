@@ -32,7 +32,8 @@ public class StepController : MonoBehaviour
 
 	private void Start()
 	{
-		if (dialogueShot)	dialogueShot.SetActive(false);
+		if (dialogueShot)
+			dialogueShot.SetActive(false);
 	}
 
 	void PlayDefaultDialogue()
@@ -76,7 +77,8 @@ public class StepController : MonoBehaviour
 		_winDialogueEvent.OnEventRaised += PlayWinDialogue;
 		_loseDialogueEvent.OnEventRaised += PlayLoseDialogue;
 		isInDialogue = true;
-		if (dialogueShot)	dialogueShot.SetActive(true);
+		if (dialogueShot)
+			dialogueShot.SetActive(true);
 	}
 	void EndDialogue()
 	{
@@ -85,7 +87,8 @@ public class StepController : MonoBehaviour
 		_loseDialogueEvent.OnEventRaised -= PlayLoseDialogue;
 		ResumeConversation();
 		isInDialogue = false;
-		if (dialogueShot)	dialogueShot.SetActive(false);
+		if (dialogueShot)
+			dialogueShot.SetActive(false);
 	}
 
 	void PlayLoseDialogue()
